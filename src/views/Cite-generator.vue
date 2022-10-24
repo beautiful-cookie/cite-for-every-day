@@ -1,68 +1,89 @@
 <template>
   <div class="about">
-    <div class="cites">
+    <blockquote>
       <h2>Генератор цитат!</h2> 
 
       <span class="span-text"> 
         <p class="text">Тут должна быть случайная умная цитата, которая тебе непременно понравится</p>
+        <cite>Автор цитаты</cite>
       </span> 
 
       <button>Сгенерировать!</button>
-    </div>
+    </blockquote>
   </div>
 </template> 
 
-<style scoped>
-  .cites 
+<style scoped> 
+
+  blockquote 
   {
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
     align-items: center; 
     gap: 10vh; 
+    margin-top: 5vh;
+    font-size: 16px; 
   } 
 
-  .span-text 
+  button 
   {
+    color: black; 
+    font-weight: 500; 
+    border-radius: 5px; 
+    padding: 5px; 
+    width: 300px; 
+    height: 50px; 
+    background-color: white; 
+    border: 1px solid black; 
+    transition-property: box-shadow, color, background-color;
+    transition-duration: 0.3s; 
+  }
+
+  button:hover 
+  { 
+    box-shadow: 0 0 8px black; 
+    background-color: black; 
+    color: white; 
+  }
+
+  .span-text 
+  { 
+    position: relative; 
     max-width: 400px; 
   }
   .text 
   { 
     text-align: center; 
-    /* border: 1px solid rgba(0, 0, 0, 0.5);  */
-    /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); */
     border-radius: 10px;
     padding: 20px; 
   } 
 
+  .span-text:before, 
+  .span-text:after 
+  { 
+    position: absolute; 
+    color: black; 
+    font-size: 100px;
+    font-family: Times, sans-serif;    
+    line-height: 100px;  
+    border-radius: 50%; 
+
+  }
+
   .span-text::before 
   {
-    content: '"'; 
-    position: absolute; 
-    background-color: black; 
-    color: white; 
-    border-radius: 50%; 
-    width: 20px; 
-    font-weight: 500; 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    transform: translate(-1000%);
-    top: auto; 
-    margin: auto;  
+    content: '“'; 
+    left: -15px; 
+    top: -15px;
   } 
 
   .span-text::after  
   {
-    content: '"'; 
-    position: absolute; 
-    background-color: black; 
-    color: white; 
-    border-radius: 50%; 
-    width: 20px; 
-    font-weight: 500; 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    transform: translate(1000%);
-    top: auto; 
-    margin: auto;  
+    content: '”'; 
+    right: -30px; 
+    bottom: -30px; 
   }
+
 
 </style>
