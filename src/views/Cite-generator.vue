@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <blockquote>
-      <h2>Генератор цитат!</h2> 
+      <h2>Случайная цитата:</h2> 
 
       <span class="span-text"> 
         <p class="text">Тут должна быть случайная умная цитата, которая тебе непременно понравится</p>
@@ -34,6 +34,7 @@
     padding: 5px; 
     width: 300px; 
     height: 50px; 
+    font-weight: 600;
     background-color: white; 
     border: 1px solid black; 
     transition-property: box-shadow, color, background-color;

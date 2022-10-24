@@ -1,10 +1,10 @@
 <template>
     <div>
       <nav>
-        <h2>Cite generator</h2> 
+        <h2>Генератор цитат</h2> 
         <div class="links">
-          <router-link to="/"><strong>Home</strong></router-link> |
-          <router-link to="/Cite-generator"><strong>Cite generator</strong></router-link>
+          <router-link to="/"><strong>Главная</strong></router-link> |
+          <router-link to="/Cite-generator"><strong>Генератор</strong></router-link>
         </div>
   
       </nav>
