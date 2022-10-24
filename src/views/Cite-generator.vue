@@ -3,15 +3,41 @@
     <blockquote>
       <h2>Случайная цитата:</h2> 
 
-      <span class="span-text"> 
-        <p class="text">Тут должна быть случайная умная цитата, которая тебе непременно понравится</p>
-        <cite>Автор цитаты</cite>
-      </span> 
+      <div class="quote-container"> 
+        <span class="span-text"> 
+          <p class="text">{{this.citeText}}</p>
+          <cite>{{this.citeAuthor}}</cite>
+        </span> 
+      </div>
 
-      <button>Сгенерировать!</button>
+      <button v-on:click="this.findCite">Сгенерировать!</button>
     </blockquote>
   </div>
 </template> 
+
+<script> 
+import quotes from '@/assets/quotes.json' 
+
+export default {
+  data() {
+    return {
+      citeText: 'Тут должна быть случайная умная цитата, которая тебе непременно понравится', 
+      citeAuthor: 'Автор цитаты' 
+    }
+  }, 
+  methods: {
+      findCite() {
+        let citesArrStringify = JSON.stringify(quotes) 
+        let citesArr = JSON.parse(citesArrStringify)
+        let citesLenght = citesArr.quotes   
+        let citeNum = Math.floor(Math.random() * (citesLenght.length - 1) + 1) 
+        let cite = citesLenght[citeNum] 
+        this.citeText = cite.quote 
+        this.citeAuthor = cite.author 
+      }
+    }
+}
+</script>
 
 <style scoped> 
 
@@ -21,7 +47,7 @@
     flex-direction: column; 
     justify-content: center; 
     align-items: center; 
-    gap: 10vh; 
+    gap: 5vh; 
     margin-top: 5vh;
     font-size: 16px; 
   } 
@@ -46,12 +72,22 @@
     box-shadow: 0 0 8px black; 
     background-color: black; 
     color: white; 
+    text-shadow: 0 0 8px white; 
+  } 
+
+  .quote-container 
+  {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100vw; 
+    height: 35vh; 
   }
 
   .span-text 
   { 
     position: relative; 
-    max-width: 400px; 
+    width: 400px; 
   }
   .text 
   { 
