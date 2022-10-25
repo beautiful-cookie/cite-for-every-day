@@ -1,7 +1,15 @@
 <template>
     <div>
       <nav>
-        <h2>Генератор цитат</h2> 
+        <div class="title-wrapper">
+          <div class="title-quotes">
+            <div class="title"> 
+              <cite class="title-cite">Если я цитирую других, то лишь для того, чтобы лучше выразить свою собственную мысль</cite> 
+              <span class="autor"><cite>- Мишель Монтень</cite></span> 
+            </div>
+          </div>
+        </div>
+
         <div class="links">
           <router-link to="/"><strong>Главная</strong></router-link> |
           <router-link to="/Cite-generator"><strong>Случайная цитата</strong></router-link>
@@ -20,6 +28,95 @@
       justify-content: center; 
       align-items: center; 
     } 
+
+  .title-wrapper 
+  {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100vw; 
+    overflow: hidden; 
+  } 
+
+  .title-quotes
+  {
+    width: 70vh;
+    position: relative; 
+  }
+
+  .title-quotes:before, 
+  .title-quotes:after 
+  { 
+    position: absolute; 
+    color: black; 
+    font-size: 50px;
+    font-family: Times, sans-serif;    
+    line-height: 50px;  
+    border-radius: 50%; 
+  }
+
+  .title-quotes::before 
+  {
+    content: '“'; 
+    left: -40px; 
+    top: 0;
+  } 
+
+  .title-quotes::after  
+  {
+    content: '”'; 
+    right: -40px; 
+    bottom: -15px; 
+  }
+
+    .title 
+    { 
+      position: relative;
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      flex-direction: column; 
+      text-align: center;  
+      max-width: 70vw; 
+      gap: 2vh;
+      margin-top: 2vh; 
+      margin-bottom: 2vh;  
+      padding-left: 15px; 
+      padding-right: 15px; 
+    } 
+
+    .title:before, 
+    .title:after 
+    {
+      content: ""; 
+      position: absolute; 
+      height: 90px; 
+      width: 2px; 
+      background-color: black;  
+      box-shadow: 0 0 8px black; 
+      top: auto; 
+    } 
+
+    .title::before 
+    {
+      left: 0; 
+    } 
+
+    .title::after 
+    {
+      right: 0; 
+    }
+
+    .title-cite 
+    {
+      font-size: 18px; 
+      text-shadow: 4px 8px 8px black; 
+    }
+    .author 
+    {
+      text-decoration: underline; 
+      font-size: 10px; 
+    }
 
     .links 
     {

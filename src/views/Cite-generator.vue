@@ -105,7 +105,6 @@ export default {
     font-family: Times, sans-serif;    
     line-height: 100px;  
     border-radius: 50%; 
-
   }
 
   .span-text::before 
