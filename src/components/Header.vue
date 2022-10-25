@@ -40,6 +40,9 @@
 
 .title-quotes
 {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
   width: 70vh;
   position: relative; 
 }
@@ -59,7 +62,7 @@
 {
   content: '“'; 
   left: -40px; 
-  top: 0;
+  top: 0; 
 } 
 
 .title-quotes::after  
@@ -149,5 +152,61 @@
     background-color: black; 
     color: white; 
     text-shadow: 0 0 1px white;  
+  }
+
+
+  @media screen and (max-width: 1000px) {
+    .title-quotes::before 
+    {
+      left: -30px; 
+    } 
+    .title-quotes::after
+    {
+      right: -30px;
+    }
+  } 
+
+  @media screen and (max-width: 860px) {
+    .title-quotes::before 
+    {
+      left: 10px; 
+    } 
+    .title-quotes::after
+    {
+      right: 10px;
+    }
+  } 
+
+  @media screen and (max-width: 600px) {
+    .title-quotes::before 
+    {
+      left: 20px; 
+    } 
+    .title-quotes::after
+    {
+      right: 20px;
+    }
+  } 
+
+    @media screen and (max-width: 540px) {
+    .title-quotes::before 
+    {
+      left: 0; 
+    } 
+    .title-quotes::after
+    {
+      right: 0;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .title-quotes::before 
+    {
+      left: 10px; 
+    } 
+    .title-quotes::after
+    {
+      right: 10px; 
+    }
   }
 </style>
