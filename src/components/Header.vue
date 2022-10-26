@@ -203,7 +203,7 @@
     {
       left: -10px; 
     } 
-    .title-quotes::after
+    .title-quotes::after 
     {
       right: -10px; 
       bottom: -20px;
