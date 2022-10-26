@@ -13,10 +13,12 @@ const routes = [
   {
     path: '/Cite-generator',
     name: 'Cite-generator',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Cite-generator.vue')
+    component: () => import('../views/Cite-generator.vue')
+  }, 
+  {
+    path: '/Authors-filter',
+    name: 'Authors-filter',
+    component: () => import('../views/AuthorsFilter.vue')
   }
 ]
 
