@@ -87,7 +87,7 @@ export default {
   .span-text 
   { 
     position: relative; 
-    width: 400px; 
+    max-width: 400px; 
   }
   .text 
   { 
@@ -121,5 +121,70 @@ export default {
     bottom: -30px; 
   }
 
+
+  @media screen and (max-width: 600px) {
+    .span-text::before, 
+    .span-text::after  
+    {
+      font-size: 70px; 
+    } 
+
+    .span-text::before 
+    {
+      left: -5px; 
+      top: -5px;
+    } 
+
+    .span-text::after  
+    {
+      right: -5px; 
+      bottom: -20px; 
+    }
+  } 
+
+  @media screen and (max-width: 430px) {
+    .span-text::before, 
+    .span-text::after  
+    {
+      font-size: 50px; 
+    } 
+
+    .span-text::before 
+    {
+      left: 15px; 
+      top: -10px;
+    } 
+
+    .span-text::after  
+    {
+      right: 15px; 
+      bottom: -20px; 
+    }
+  } 
+
+  @media screen and (max-width: 400px) { 
+
+    .span-text 
+    { 
+      max-width: 300px; 
+    }
+    .span-text::before, 
+    .span-text::after  
+    {
+      font-size: 40px; 
+    } 
+
+    .span-text::before 
+    {
+      left: 0px; 
+      top: -15px;
+    } 
+
+    .span-text::after  
+    {
+      right: 10px; 
+      bottom: -20px; 
+    }
+  } 
 
 </style>

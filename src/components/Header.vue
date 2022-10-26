@@ -43,7 +43,7 @@
   display: flex; 
   justify-content: center; 
   align-items: center; 
-  width: 70vh;
+  width: 70vw;
   position: relative; 
 }
 
@@ -158,55 +158,76 @@
   @media screen and (max-width: 1000px) {
     .title-quotes::before 
     {
-      left: -30px; 
+      left: -50px; 
     } 
     .title-quotes::after
     {
-      right: -30px;
+      right: -50px;
     }
   } 
 
   @media screen and (max-width: 860px) {
     .title-quotes::before 
     {
-      left: 10px; 
+      left: -40px; 
     } 
     .title-quotes::after
     {
-      right: 10px;
+      right: -40px;
     }
   } 
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px) { 
+
+    .title 
+    {
+      max-width: 60vw; 
+    } 
+
+    .title-quotes 
+    {
+      width: 50vw;
+    }
     .title-quotes::before 
     {
-      left: 20px; 
+      left: -10px; 
     } 
     .title-quotes::after
     {
-      right: 20px;
+      right: -10px;
     }
   } 
 
     @media screen and (max-width: 540px) {
     .title-quotes::before 
     {
-      left: 0; 
+      left: -10px; 
     } 
     .title-quotes::after
     {
-      right: 0;
+      right: -10px; 
+      bottom: -20px;
     }
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 480px) { 
+
+    .title 
+    {
+      max-width: 60vw; 
+    } 
+
+    .title-quotes 
+    {
+      width: 80vw;
+    }
     .title-quotes::before 
     {
-      left: 10px; 
+      left: -20px; 
     } 
     .title-quotes::after
     {
-      right: 10px; 
+      right: -20px; 
     }
   }
 </style>
