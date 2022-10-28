@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkcite_for_every_day"]=self["webpackChunkcite_for_every_day"]||[]).push([[526],{4526:function(e,n,s){s.r(n),s.d(n,{default:function(){return c}});var t=function(){var e=this,n=e._self._c;return n("div",{staticClass:"message"},[e._v(" Comming soon... ")])},r=[],u=s(1001),l={},a=(0,u.Z)(l,t,r,!1,null,null,null),c=a.exports}}]);
-//# sourceMappingURL=526.3fcc7c35.js.map
