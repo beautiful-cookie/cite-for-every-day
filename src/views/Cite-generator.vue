@@ -119,7 +119,7 @@ export default {
     content: '”'; 
     right: -30px; 
     bottom: -30px; 
-  }
+  } 
 
 
   @media screen and (max-width: 600px) {
