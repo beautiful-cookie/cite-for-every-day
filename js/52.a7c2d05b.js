@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkcite_for_every_day"]=self["webpackChunkcite_for_every_day"]||[]).push([[52],{8493:function(e,n,r){r.r(n),r.d(n,{default:function(){return l}});var t=function(){var e=this;e._self._c;return e._m(0)},u=[function(){var e=this,n=e._self._c;return n("div",[n("h1",[e._v("404")]),n("h2",[e._v("Страниа не найдена")]),n("h3",[e._v("Зато вы всегда можете вернуться на уже существующие страницы")])])}],_=r(1001),c={},f=(0,_.Z)(c,t,u,!1,null,null,null),l=f.exports}}]);
+//# sourceMappingURL=52.a7c2d05b.js.map
