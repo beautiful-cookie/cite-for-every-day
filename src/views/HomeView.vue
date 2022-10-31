@@ -1,12 +1,13 @@
 <template>
   <div class="content">
-    <div class="content-box">
+    <div class="content-box"> 
       <h3>Это сайт с цитатами на каждый день</h3> 
       <p class="text">Тут ты можешь искать вдохновение, мотивацию да и просто умные мысли, выраженные в лаконичной форме</p> 
       <p>Приятного серфинга!</p> 
     </div>
   </div>
 </template> 
+
 
 <style scoped>
   .content 

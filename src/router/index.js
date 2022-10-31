@@ -9,6 +9,10 @@ const routes = [
     path: '/',
     name: 'home', 
     component: HomeView
+  }, 
+  {
+    path: '*',
+    component: () => import('../views/404.vue')
   },
   {
     path: '/Cite-generator',

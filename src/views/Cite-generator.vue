@@ -1,17 +1,17 @@
 <template>
-  <div class="about">
+  <div class="content-wrapper">
     <blockquote>
-      <h2>Случайная цитата:</h2> 
+        <h2>Случайная цитата:</h2> 
 
-      <div class="quote-container"> 
-        <span class="span-text"> 
-          <p class="text">{{this.citeText}}</p>
-          <cite>{{this.citeAuthor}}</cite>
-        </span> 
-      </div>
+        <div class="quote-container"> 
+          <span class="span-text"> 
+            <p class="text">{{this.citeText}}</p>
+            <cite>{{this.citeAuthor}}</cite>
+          </span> 
+        </div>
 
-      <button v-on:click="this.findCite">Сгенерировать!</button>
-    </blockquote>
+        <button v-on:click="this.findCite">Сгенерировать!</button>
+      </blockquote>
   </div>
 </template> 
 
@@ -117,7 +117,7 @@ export default {
   .span-text::after  
   {
     content: '”'; 
-    right: -30px; 
+    right: -20px; 
     bottom: -30px; 
   } 
 
