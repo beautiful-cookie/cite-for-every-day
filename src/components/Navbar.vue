@@ -1,8 +1,8 @@
 <template>
     <div class="links"> 
-        <router-link class="btn-left" to="/">Главная</router-link>
-        <router-link class="btn-center" to="/Cite-generator">Случайная цитата</router-link>  
-        <router-link class="btn-right" to="/Authors-filter">По авторам</router-link>  
+        <router-link to="/" exact>Главная</router-link>
+        <router-link to="/Cite-generator">Случайная цитата</router-link>  
+        <router-link to="/Authors-filter">По авторам</router-link>  
     </div> 
 </template> 
 
@@ -82,7 +82,8 @@
     opacity: .8; 
   }
 
-  a:hover 
+  a:hover, 
+  a.router-link-exact-active 
   {
     box-shadow: 0 0 8px black; 
     background-color: black; 
@@ -91,5 +92,7 @@
     border-bottom: 5px solid rgb(228, 228, 228); 
     opacity: 1; 
   } 
+
+
 
 </style>

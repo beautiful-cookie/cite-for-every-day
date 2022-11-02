@@ -47,7 +47,7 @@ export default {
     flex-direction: column; 
     justify-content: center; 
     align-items: center; 
-    gap: 5vh; 
+    gap: 2vh; 
     margin-top: 5vh;
     font-size: 16px; 
   } 

@@ -2,7 +2,9 @@
   <div id="app">
       <Header />  
 
-      <router-view />
+      <transition name="fade">
+        <router-view />
+      </transition>
   </div>
 </template> 
 
@@ -25,5 +27,15 @@
   color: #2c3e50; 
 }
 
+.fade-enter-active, .fade-leave-active
+{
+  transition: opacity 0.5s;  
+} 
+
+.fade-enter, .fade-leave-to 
+{
+  transition: opacity 0.5s;  
+  opacity: 0; 
+}
 </style>
 
