@@ -68,7 +68,10 @@
 
 
   a 
-  {
+  { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     text-decoration: none; 
     color: white; 
     background: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1));
@@ -93,6 +96,35 @@
     opacity: 1; 
   } 
 
+  @media screen and (max-width: 480px) {
+      a 
+      {
+        padding: 7px 12px 7px 12px; 
+        font-size: medium; 
+      }
+  } 
+
+  @media screen and (max-width: 410px) {
+      a 
+      {
+        font-size: small;
+      }
+  }
+  
+  @media screen and (max-width: 355px) {
+      a 
+      {
+        padding: 10px; 
+        height: 5vh; 
+        border-radius: 0; 
+        font-size: 10px;
+      } 
+
+      .links 
+      {
+        gap: 0; 
+      }
+  }
 
 
 </style>
